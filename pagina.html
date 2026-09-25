@@ -3,10 +3,75 @@
 <head>
     <!-- Metadatos básicos -->
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mi Primera Página Web</title>
+
+    <style>
+        /* Reinicio básico de márgenes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #2c3e50;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+
+            /* Base gris clara */
+            background-color: #f1f3f5;
+
+            /* Efecto Bokeh con gradientes radiales superpuestos */
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 120px),
+                radial-gradient(circle at 80% 15%, rgba(220, 226, 235, 0.7) 0%, rgba(220, 226, 235, 0) 180px),
+                radial-gradient(circle at 30% 65%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 140px),
+                radial-gradient(circle at 75% 75%, rgba(210, 218, 226, 0.6) 0%, rgba(210, 218, 226, 0) 220px),
+                radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 160px),
+                radial-gradient(circle at 90% 90%, rgba(225, 230, 238, 0.8) 0%, rgba(225, 230, 238, 0) 130px),
+                radial-gradient(circle at 10% 85%, rgba(200, 210, 220, 0.5) 0%, rgba(200, 210, 220, 0) 170px);
+            
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Contenedores con acabado translúcido para mantener legibilidad sobre el bokeh */
+        header, main, aside, footer {
+            max-width: 800px;
+            margin: 0 auto 1.5rem auto;
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            color: #495057;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        section, article {
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -46,7 +111,7 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Mi Primera Página Web. Todos los derechos reservados.</p>
     </footer>
 
 </body>
